@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Professional Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <p>Full Stack Developer | Web Designer | Problem Solver</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a><br />
+      <a href="#projects">Projects</a><br />
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <main class="main-content">
+        <!-- About Section -->
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            Welcome to my portfolio! I'm a passionate full-stack developer with
+            a strong foundation in modern web technologies. I have experience
+            building responsive, user-friendly applications that solve
+            real-world problems. My journey in tech began with a curiosity for
+            how things work, and it has evolved into a career focused on
+            creating innovative solutions. I'm dedicated to continuous learning
+            and staying updated with the latest industry trends.
+          </p>
+
+          <figure>
+            <img
+              src="profile.jpg"
+              alt="Profile picture placeholder"
+              style="width: 100px; height: 100px"
+            />
+            <figcaption>Dhuvarakesh S</figcaption>
+          </figure>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <h2>My Projects</h2>
+          <div class="projects">
+            <article>
+              <h3>Degree Dialog - AI College Advisor Chatbot</h3>
+              <p>
+                A student-facing AI chatbot and information portal for colleges
+                built as a full-stack monorepo. The application provides
+                real-time Q&A assistance powered by Google's Gemini AI, helping
+                students discover college information through a clean, intuitive
+                web interface. Frontend deployed on Vercel, backend on Render
+                with CORS-enabled API integration.
+              </p>
+              <ul>
+                <li>React + Vite frontend with real-time chatbox UI</li>
+                <li>Django backend with Gemini AI API integration</li>
+                <li>
+                  CORS-enabled REST API for frontend-backend communication
+                </li>
+                <li>
+                  College advisor AI persona with specialized prompt engineering
+                </li>
+                <li>Deployed frontend on Vercel, backend on Render</li>
+              </ul>
+            </article>
+
+            <article>
+              <h3>Sports Analysis - Football Analytics Dashboard</h3>
+              <p>
+                A comprehensive web application for sports data analytics that
+                visualizes football statistics across multiple leagues and
+                teams. Built with a React + Vite frontend and Flask backend, it
+                integrates with the Football-Data API to provide real-time
+                league standings, team statistics, and player position analysis.
+                Features interactive dashboards with Chart.js visualizations and
+                Tailwind CSS styling.
+              </p>
+              <ul>
+                <li>
+                  React + Vite frontend with Tailwind CSS responsive design
+                </li>
+                <li>
+                  Flask Python backend with caching to manage API rate limits
+                </li>
+                <li>
+                  Live league standings for PL, La Liga, Bundesliga, Serie A,
+                  and more
+                </li>
+                <li>
+                  Interactive team statistics with Bar and Pie charts using
+                  Chart.js
+                </li>
+                <li>Player position analysis and competition breakdown</li>
+              </ul>
+            </article>
+
+            <article>
+              <h3>Mask Detection - Real-time Object Detection System</h3>
+              <p>
+                An advanced computer vision application using YOLOv8 for
+                real-time mask detection with multi-object tracking. The system
+                monitors compliance rates, generates audit logs, and provides
+                visual feedback through OpenCV overlays. Trained on 4,547 images
+                with data augmentation, it accurately tracks individuals across
+                frames and logs detection events with confidence scores for
+                workplace safety monitoring.
+              </p>
+              <ul>
+                <li>
+                  YOLOv8 object detection with ByteTrack multi-object tracking
+                </li>
+                <li>
+                  Real-time compliance monitoring with visual progress bar
+                </li>
+                <li>
+                  CSV logging of all detection events with timestamps and
+                  confidence scores
+                </li>
+                <li>
+                  Audio alerts for no-mask detection with debounced
+                  notifications
+                </li>
+                <li>
+                  Roboflow-trained dataset with 4,547 images and augmentation
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <p>
+            I'd love to hear from you! Whether you have a project in mind, want
+            to collaborate, or just want to say hello, feel free to reach out.
+            I'll get back to you as soon as possible.
+          </p>
+
+          <form
+            action="https://formsubmit.co/dhuvarakeshs92@gmail.com"
+            method="POST"
+          >
+            <!-- Hidden fields for FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_next" value="https://dhuvarakesh17.github.io/Portfolio.html#contact">
+            
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter Your Name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter Your Email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Enter Your Message"
+              ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+          <p id="success-message" style="display:none; color: green; margin-top: 10px;">✓ Message sent successfully!</p>
+        </section>
+      </main>
+
+      <!-- Aside Section -->
+      <aside>
+        <h3 style="margin-top: 2rem">Skills</h3>
+        <ul>
+          <li>Flask & Django</li>
+          <li>React JS</li>
+          <li>Git & GitHub</li>
+          <li>Docker</li>
+          <li>Rest APIs</li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/Dhuvarakesh17" target="_blank">GitHub</a
+        ><br />
+        <a
+          href="https://www.linkedin.com/in/dhuvarakesh-s-5195b1291/"
+          target="_blank"
+          >LinkedIn</a
+        ><br />
+        <a href="mailto:dhuvarakeshs92@gmail.com">Email</a>
+      </div>
+    </footer>
+  </body>
+</html>
